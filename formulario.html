@@ -17,6 +17,40 @@
     <!-- Contenido de la página -->
     <h1>Formulario</h1>
 
+    <form action="" method="GET">
+
+
+      <!-- Nombre -->
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre">
+      <br><br> <!-- Apellido -->
+      <label for="apellido">Apellido:</label><br>
+      <input type="text" id="apellido" name="apellido">
+      <br><br>
+
+      <!-- Sexo -->
+      <label for="sexo">Sexo:</label><br>
+
+      <input type="radio" id="M" name="sexo" value="M" checked>
+      <label for="M">Masculino</label><br>
+
+      <input type="radio" id="F" name="sexo" value="F">
+      <label for="F">Femenino</label>
+      <br><br>
+
+      <!-- Carrera -->
+      <label for="carrera">Carrera:</label><br>
+      <select name="carrera" id="carrera">
+        <option value="" disabled selected>Seleccione una carrera</option>
+        <option value="ingSistemas">Ing. Sistemas Informáticos</option>
+        <option value="ingIndustrial">Ing. Industrial</option>
+        <option value="ingElectrica">Ing. Eléctrica</option>
+      </select>
+      <br><br>
+      <!-- Botón de submit -->
+      <button type="submit">Enviar</button>
+    </form>
+
     <!-- Scripts js -->
   </body>
 </html>
