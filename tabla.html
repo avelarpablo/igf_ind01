@@ -34,41 +34,69 @@
     </nav>
 
     <!-- Contenido de la página -->
-    <h1>Tabla</h1>
+    <div class="container">
+      <h1>Tabla</h1>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Nombres</th>
-          <th>Apellidos</th>
-          <th>Sexo</th>
-          <th>Carrera</th>       
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>Juan</td>
-          <td>Perez</td>
-          <td>M</td>
-          <td>Ing. Industrial</td>
-        </tr>
-
-        <tr>
-          <td>Pedro</td>
-          <td>Martínez</td>
-          <td>M</td>
-          <td>Ing. Eléctrica</td>
-        </tr>
-        
-        <tr>
-          <td>María</td>
-          <td>Campos</td>
-          <td>F</td>
-          <td>Ing. Sistemas Informáticos</td>
-        </tr>
-      </tbody>
-    </table>
+      <table class="table text-center">
+        <thead>
+          <tr>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Sexo</th>
+            <th>Carrera</th>
+            <th>Acciones</th>   
+          </tr>
+        </thead>
+  
+        <tbody>
+          <tr>
+            <td>Juan</td>
+            <td>Perez</td>
+            <td>M</td>
+            <td>Ing. Industrial</td>
+            <td>
+              <button type="button" class="btn btn-dark">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button type="button" class="btn btn-dark">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </td>
+          </tr>
+  
+          <tr>
+            <td>Pedro</td>
+            <td>Martínez</td>
+            <td>M</td>
+            <td>Ing. Eléctrica</td>
+            <td>
+              <button type="button" class="btn btn-dark">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button type="button" class="btn btn-dark">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>María</td>
+            <td>Campos</td>
+            <td>F</td>
+            <td>Ing. Sistemas Informáticos</td>
+            <td>
+              <button type="button" class="btn btn-dark">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button type="button" class="btn btn-dark">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
 
     <!-- Scripts js -->
     <!-- jQuery library -->
