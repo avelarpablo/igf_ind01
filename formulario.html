@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>T&iacute;tulo</title>
+    <title>Formulario</title>
 
     <!-- Hojas css -->
     <!-- Latest compiled and minified CSS -->
@@ -34,41 +34,66 @@
     </nav>
 
     <!-- Contenido de la página -->
-    <h1>Formulario</h1>
+    <div class="container">
+      <h1>Formulario</h1>
+      <small class="text-danger">* Obligatorio</small>
 
-    <form action="" method="GET">
+      <form action="" method="GET">
+        <div class="form-row">
+          <!-- Nombre -->
+          <div class="form-group col-md-6">
+            <label for="nombre">Nombre: <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre">
+          </div>
 
+          <!-- Apellido -->
+          <div class="form-group col-md-6">
+            <label for="apellido">Apellido: <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" placeholder="Apellido" id="apellido" name="apellido">
+          </div>      
+        </div>
+         
+        <div class="form-row">
+          <!-- Carrera -->
+          <div class="form-group col-md-6">
+            <label for="carrera">Carrera: <span class="text-danger">*</span></label><br>
+            <select class="form-control" name="carrera" id="carrera">
+              <option value="" disabled selected>Seleccione una carrera</option>
+              <option value="ingSistemas">Ing. Sistemas Informáticos</option>
+              <option value="ingIndustrial">Ing. Industrial</option>
+              <option value="ingElectrica">Ing. Eléctrica</option>
+            </select>
+          </div>
 
-      <!-- Nombre -->
-      <label for="nombre">Nombre:</label><br>
-      <input type="text" id="nombre" name="nombre">
-      <br><br> <!-- Apellido -->
-      <label for="apellido">Apellido:</label><br>
-      <input type="text" id="apellido" name="apellido">
-      <br><br>
+          <!-- Sexo -->
+          <div class="form-group col-md-6">
+            <label for="sexo">Sexo: <span class="text-danger">*</span></label>
 
-      <!-- Sexo -->
-      <label for="sexo">Sexo:</label><br>
+            <div>
+              <!-- Radiobutton masculino -->
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="M" name="sexo" value="M" checked>
+                <label class="form-check-label" for="M">Masculino</label>
+              </div>            
 
-      <input type="radio" id="M" name="sexo" value="M" checked>
-      <label for="M">Masculino</label><br>
+              <!-- Radiobutton femenino -->
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="F" name="sexo" value="F">
+                <label class="form-check-label" for="F">Femenino</label>
+              </div>      
+            </div>                  
+          </div>         
+        </div>
 
-      <input type="radio" id="F" name="sexo" value="F">
-      <label for="F">Femenino</label>
-      <br><br>
+        <div class="float-right">
+           <!-- Botón de submit -->
+          <button class="btn btn-outline-dark" type="button">Limpiar</button>
 
-      <!-- Carrera -->
-      <label for="carrera">Carrera:</label><br>
-      <select name="carrera" id="carrera">
-        <option value="" disabled selected>Seleccione una carrera</option>
-        <option value="ingSistemas">Ing. Sistemas Informáticos</option>
-        <option value="ingIndustrial">Ing. Industrial</option>
-        <option value="ingElectrica">Ing. Eléctrica</option>
-      </select>
-      <br><br>
-      <!-- Botón de submit -->
-      <button type="submit">Enviar</button>
-    </form>
+          <!-- Botón de submit -->
+          <button class="btn btn-dark" type="submit">Enviar</button>
+        </div>       
+      </form>
+    </div>    
 
     <!-- Scripts js -->
     <!-- jQuery library -->
