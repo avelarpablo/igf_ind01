@@ -3,4 +3,9 @@ $(document).ready(function(){
     $('.btn-editar').on('click', function(){
         console.log($(this).attr('data-id-estudiante'));
     });
+
+    // Acción para botones de eliminar
+    $('.btn-eliminar').on('click', function(){
+        $(this).closest('tr').hide();
+    });
 });
