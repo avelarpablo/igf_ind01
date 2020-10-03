@@ -38,7 +38,7 @@
       <h1>Formulario</h1>
       <small class="text-danger">* Obligatorio</small>
 
-      <form action="" method="GET">
+      <form id="formEstudiante" action="" method="GET">
         <div class="form-row">
           <!-- Nombre -->
           <div class="form-group col-md-6">
@@ -49,7 +49,7 @@
           <!-- Apellido -->
           <div class="form-group col-md-6">
             <label for="apellido">Apellido: <span class="text-danger">*</span></label>
-            <input id="nombre" type="text" class="form-control" placeholder="Apellido" id="apellido" name="apellido">
+            <input type="text" class="form-control" placeholder="Apellido" id="apellido" name="apellido">
           </div>      
         </div>
          
@@ -57,7 +57,7 @@
           <!-- Carrera -->
           <div class="form-group col-md-6">
             <label for="carrera">Carrera: <span class="text-danger">*</span></label><br>
-            <select id="carrera" class="form-control" name="carrera" id="carrera">
+            <select class="form-control" name="carrera" id="carrera">
               <option value="" disabled selected>Seleccione una carrera</option>
               <option value="ingSistemas">Ing. Sistemas Informáticos</option>
               <option value="ingIndustrial">Ing. Industrial</option>
@@ -86,8 +86,8 @@
         </div>
 
         <div class="float-right">
-           <!-- Botón de submit -->
-          <button class="btn btn-outline-dark" type="button">Limpiar</button>
+           <!-- Botón de limpiar -->
+          <button id="btnLimpiar" class="btn btn-outline-dark" type="button">Limpiar</button>
 
           <!-- Botón de submit -->
           <button class="btn btn-dark" type="submit">Enviar</button>

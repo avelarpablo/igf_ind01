@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $('#carrera').on('change', function(){
-        console.log($(this).find(":selected").val());
+    // Acción botón limpiar formulario
+    $('#btnLimpiar').on('click', function(){
+        $('#formEstudiante')[0].reset();
     });
 });
